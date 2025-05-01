@@ -1,4 +1,3 @@
-```
 # Phase 2: SIEM (Splunk) Attack Log Analysis and Visualization
 
 After compromising the HTTP service in Phase 1, the next step was to analyze and visualize the attack data using a Security Information and Event Management (SIEM) platform. Splunk was selected for this task due to its strong capabilities in log indexing, searching, and dashboard creation.
@@ -104,4 +103,3 @@ Displays the total number of attack-related events parsed.
 ## Summary
 
 In this phase, attack data was successfully generated using multiple tools, ingested into Splunk, and visualized using a custom dashboard. This process highlighted how SIEM platforms can transform raw log data into meaningful insights for monitoring, threat detection, and analysis.
-```
