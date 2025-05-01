@@ -1,0 +1,4 @@
+[+] HTTP Response Code: 200
+[+] Server Header: Microsoft-IIS/7.5
+[+] X-Frame-Options header: None
+[+] X-Content-type-Options Header: None

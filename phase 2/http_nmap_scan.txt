@@ -1,0 +1,12 @@
+# Nmap 7.95 scan initiated Sat Apr 26 10:26:17 2025 as: /usr/lib/nmap/nmap --privileged -sV -p 80 -oN http_nmap_scan.txt 192.168.56.109
+mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Try using --system-dns or specify valid servers with --dns-servers
+Nmap scan report for 192.168.56.109
+Host is up (0.0020s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd 7.5
+MAC Address: 08:00:27:31:B6:73 (PCS Systemtechnik/Oracle VirtualBox virtual NIC)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr 26 10:26:24 2025 -- 1 IP address (1 host up) scanned in 6.72 seconds
