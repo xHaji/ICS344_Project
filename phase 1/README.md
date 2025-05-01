@@ -59,7 +59,7 @@ This made the web server a high-value target due to:
 
 ---
 
-## ⚙Attack Execution using Metasploit
+## Attack Execution using Metasploit
 
 ### Module Used:
 auxiliary/scanner/http/webdav_scanner
