@@ -18,6 +18,8 @@ Steps included:
 - Running build scripts
 - Connecting both attacker and victim to the same internal network
 
+![Victim IP Address](./screenshots/victim_ipconfig.png)
+
 ---
 
 ## Attacker Machine Setup (Kali Linux 2024)
@@ -29,6 +31,8 @@ Kali Linux 2024 was used as the attacker machine due to its built-in tools:
 - Metasploit Framework
 
 It was installed and configured in VirtualBox on the same internal network as the victim to enable full network communication and analysis.
+
+![Attacker IP Address](./screenshots/attacker_ifconfig.png)
 
 ---
 
@@ -52,10 +56,14 @@ This made the web server a high-value target due to:
 - Port 80 open
 - Detected service: Microsoft-IIS/7.5
 
+![Nmap Scan Result](./screenshots/nmap_scan_result.png)
+
 ### Nikto Results:
 - Missing `X-Frame-Options`, `X-Content-Type-Options`
 - Default IIS pages present
 - Permissive HTTP methods (OPTIONS, TRACE, etc.)
+
+![Nikto Scan Result](./screenshots/nikto_scan_result.png)
 
 ---
 
@@ -71,6 +79,8 @@ use auxiliary/scanner/http/webdav_scanner set RHOSTS 192.168.56.109 run
 
 **Result**: Service detected successfully, but WebDAV was disabled — no further exploitation via this vector.
 
+![Metasploit WebDAV Scan](./screenshots/metasploit_webdav_scan.png)
+
 ---
 
 ## Custom Script Attack – Python
@@ -84,6 +94,8 @@ A Python 3 script was written using the `requests` library to manually query the
 - Retrieve HTTP headers
 - Identify missing security headers
 
+![Python Script Code](./screenshots/http_scan_script_code.png)
+
 ### Output:
 - `Status Code`: 200 OK
 - `Server`: Microsoft-IIS/7.5
@@ -93,6 +105,8 @@ A Python 3 script was written using the `requests` library to manually query the
 This confirmed that the server was vulnerable to:
 - **Clickjacking**
 - **MIME Sniffing Attacks**
+
+![Python Script Output](./screenshots/http_scan_script_output.png)
 
 ---
 
