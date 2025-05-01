@@ -75,9 +75,3 @@ The following table summarizes how the defense mechanisms changed the system's s
 ## Analysis
 
 With the implementation of the security measures stated earlier, the attack surface was greatly minimized. Access to Port 80 was blocked externally through firewall rules. The WebDAV module was shut off, eliminating further unnecessary exposure along with improving HTTP security headers to strengthen the server. Retesting revealed that Nmap, Nikto, and custom scripts were futile in obtaining useful information. It can be concluded that the defense successfully mitigated the exploitable vulnerabilities. For greater improvement, the installation of an IDS such as Snort is recommended along with routine service patching and continuous vulnerability assessments.
-
-### Recommendation
-
-To further strengthen security:
-- Implement an Intrusion Detection System (IDS) such as Snort.
-- Perform regular patch management and security assessments.
